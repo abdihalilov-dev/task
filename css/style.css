@@ -1,0 +1,194 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+#header {
+  padding: 20px 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav a {
+  color: rgba(42, 45, 70, 1);
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 15px;
+  transition: 0.3s;
+}
+
+.header-nav a:hover {
+  color: rgba(12, 118, 216, 1);
+}
+
+.header-order {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.header-order a {
+  color: rgba(42, 45, 70, 1);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.header-order button {
+  border: 1px solid rgba(235, 45, 102, 1);
+  width: 130px;
+  height: 30px;
+  color: rgba(235, 45, 102, 1);
+  font-size: 11px;
+  font-weight: 700;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.header-order button:hover {
+  background: rgba(235, 45, 102, 1);
+  color: white;
+}
+
+.header-end {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-end ion-icon {
+  color: rgba(235, 45, 102, 1);
+  font-size: 30px;
+}
+
+.header-end select {
+  border: none;
+  outline: none;
+  color: rgba(42, 45, 70, 1);
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-left h1 {
+  color: rgba(42, 45, 70, 1);
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.hero-left p {
+  color: rgba(42, 45, 70, 1);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  padding: 20px 0;
+}
+
+.hero-left button {
+  background: rgba(235, 45, 102, 1);
+  width: 244px;
+  height: 57px;
+  border: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-left button:hover {
+  transform: scale(1.1);
+}
+
+.hero-right {
+  position: relative;
+}
+
+.drone {
+  position: absolute;
+  left: -165px;
+  top: 50px;
+  animation: drone-anim 3s linear;
+}
+
+.text {
+  position: absolute;
+  left: 400px;
+  bottom: 40px;
+  color: white;
+}
+
+.text h5 {
+  font-size: 20px;
+}
+
+.text p {
+  padding: 10px 0;
+}
+
+@keyframes drone-anim {
+  0% {
+    transform: translateY(-500px);
+    width: 200px;
+  }
+  50% {
+    transform: translateX(-500px);
+  }
+  80% {
+    width: 350px;
+  }
+  100% {
+    width: 700px;
+  }
+}
+
+.figure {
+  clip-path: polygon(
+    10% 25%,
+    35% 25%,
+    35% 0%,
+    65% 0%,
+    65% 25%,
+    90% 25%,
+    90% 50%,
+    65% 50%,
+    65% 81%,
+    35% 81%,
+    35% 50%,
+    10% 50%
+  );
+  width: 20px;
+  height: 20px;
+  background: white;
+  position: absolute;
+  right: 300px;
+  bottom: 170px;
+}
